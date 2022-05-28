@@ -4,9 +4,8 @@ import { AppComponent } from './app.component';
 import { Pagina404ComponentComponent } from './components/pagina404-component/pagina404-component.component';
 
 const routes: Routes = [
-  { path: 'inicio', component: AppComponent },
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
-  {path: '**', component: Pagina404ComponentComponent}
+  // {path: '**', component: Pagina404ComponentComponent}
 ];
 
 @NgModule({

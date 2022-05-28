@@ -1,17 +1,18 @@
-<div class="container">
-    <div class="d-flex justify-content-between mt-5 mt-3">
+<div class="container bg-info bg-opacity-25 rounded">
+    <div class="d-flex justify-content-between mt-5 mt-3 p-4">
         <div>
             <h2>Experiencia</h2>
-            <div *ngFor="let expe of experiencia" class="mt-5 text-">
+            <div *ngFor="let expe of experiencia" class="border border-dark rounded mt-5 p-2">
                 <h3>{{expe.titulo}}</h3>
                 <h6 class="fw-normal">{{expe.fechaInicial}} - {{expe.fechaFinal}}</h6>
                 <h5>{{expe.descripcion}}</h5>
+                <!-- <a href="{{expe.url}}" target="_blank">Pepe</a> -->
             </div>
         </div>
         <div>
             <button type="button" class="btn btn-success">Agregar</button>
-            <button type="button" class="btn btn-outline-secondary"><img src="../../../assets/img/edit-svgrepo-com.svg"
-                    alt="Lapiz" width="20px"></button>
+            <button type="button" class="btn btn-outline-secondary border-0"><img
+                    src="../../../assets/img/edit-svgrepo-com.svg" alt="Lapiz" width="20px"></button>
         </div>
     </div>
 </div>
