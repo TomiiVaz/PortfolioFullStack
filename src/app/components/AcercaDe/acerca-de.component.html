@@ -1,0 +1,53 @@
+<!-- Imagenes -->
+
+<div class="m-4 position-relative">
+    <div class="container-fluid banner">
+        <img src="../../../assets/img/Messi.jpg" alt="Imagen banner" width="100%" height="400px">
+    </div>
+    <div>
+        <!-- La aparte en blanco -->
+    </div>
+    <div class="position-absolute bottom-0 start-0 ms-5">
+        <img src="../../../assets/img/Yo.jpg" alt="Imagen perfil" class="img-fluid rounded float-start" width="250px">
+        <div class="position-absolute bottom-0 end-0">
+            <button type="button" class="btn btn-outline-secondary border-0"><img
+                    src="../../../assets/img/edit-svgrepo-com.svg" alt="Lapiz" width="20px"></button>
+        </div>
+    </div>
+</div>
+
+<!-- /Imagenes -->
+
+
+<!-- Info personal -->
+
+<div class="container-fluid ps-5 d-flex flex-column info-text">
+    <h1>{{persona.nombre}}</h1>
+    <h2 class="fw-normal">{{persona.descripcion}}</h2>
+    <p>{{persona.ubicacion}}</p>
+    <div class="d-flex align-items-stretch">
+        <a routerLink="/inicio" aria-current="page">
+            <button type="button" class="btn btn-success me-2">Tengo interés en</button>
+        </a>
+        <button type="button" class="btn btn-dark me-2">Añadir seccion</button>
+        <button type="button" class="btn btn-dark">Más</button>
+    </div>
+</div>
+
+<!-- /Info personal -->
+
+<!-- Acerca de -->
+<div class="container">
+    <div class="d-flex justify-content-between mt-5 mt-3">
+        <div class="col-6">
+            <h2>Acerca de</h2>
+            <p id="p-acerca-de">{{acercaDe.descripcion}}</p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success">Agregar</button>
+            <button type="button" class="btn btn-outline-secondary"><img src="../../../assets/img/edit-svgrepo-com.svg"
+                    alt="Lapiz" width="20px"></button>
+        </div>
+    </div>
+</div>
+<!-- /Acerca de -->

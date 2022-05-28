@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="d-flex justify-content-between mt-5 mt-3">
+        <div>
+            <h2>Experiencia</h2>
+            <div *ngFor="let expe of experiencia" class="mt-5 text-">
+                <h3>{{expe.titulo}}</h3>
+                <h6 class="fw-normal">{{expe.fechaInicial}} - {{expe.fechaFinal}}</h6>
+                <h5>{{expe.descripcion}}</h5>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success">Agregar</button>
+            <button type="button" class="btn btn-outline-secondary"><img src="../../../assets/img/edit-svgrepo-com.svg"
+                    alt="Lapiz" width="20px"></button>
+        </div>
+    </div>
+</div>
