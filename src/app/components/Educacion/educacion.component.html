@@ -2,13 +2,22 @@
     <div class="d-flex justify-content-between mt-5 mt-3">
         <div>
             <h2>Eduacion</h2>
-            <p id="p-acerca-de">{{educacion.descripcion}}</p>
+            <div *ngFor="let edu of educacion" class="row mt-5 me-5 mb-5">
+                <div class="d-flex justify-content-between">
+                    <h3 class="fs-3">Institucion: <span class="fs-4">{{edu.institucion}}</span></h3>
+                    <h3 class="fs-3">Titulo: <span class="fs-5">{{edu.descripcion}}</span></h3>
+                </div>
+                <div class="d-flex">
+                    <h3 class="me-2 fs-5">Fecha de iniciacion: <span class="fs-6">{{edu.fechaInicio}}</span></h3>
+                    <h3 class="fs-5">Fecha de finalizacion: <span class="fs-6">{{edu.fechaFinalizacion}}</span></h3>
+                </div>
+            </div>
         </div>
         <div>
             <div class="text-center">
                 <button type="button" class="btn btn-success">Agregar</button>
-                <button type="button" class="btn btn-outline-secondary"><img src="../../../assets/img/edit-svgrepo-com.svg"
-                        alt="Lapiz" width="20px"></button>
+                <button type="button" class="btn btn-outline-secondary"><img
+                        src="../../../assets/img/edit-svgrepo-com.svg" alt="Lapiz" width="20px"></button>
             </div>
         </div>
     </div>

@@ -47,7 +47,7 @@ export class ExperienciaComponent implements OnInit {
       fechaFinal: 'Actualidad',
       descripcion:
         'Trabajo grupal de aplicacion web con JAVA SPRING. Intercambio de figuritas ',
-        url : "https://github.com/TomiiVaz/Figuritas"
+      url: 'https://github.com/TomiiVaz/Figuritas',
     },
   ];
 
